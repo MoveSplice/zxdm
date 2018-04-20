@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.min.js"></script>
+    <script>
+
+
+
+        // $.fn.extend({
+        //
+        //     alertWhileClick:function() {
+        //         $(this).click(function(){
+        //             parseInt($(this).val()+1);
+        //         });
+        //     }
+        // });
+
+
+
+        //
+        // $(function(){
+        //
+        //     $(".input1").alertWhileClick(this);
+        //     // $("#input4 onclick="privce()" ").alertWhileClick();
+        //     // $("#input2").alertWhileClick();
+        //     // $("#input3").alertWhileClick();
+        // })
+
+        // $.fn.extend({
+        //
+        // })
+       var del=function(obj){
+           var number = $(obj).next();
+           number.val(parseInt(number.val())-1);
+           if(number.val()<=0){
+               number.val(0);
+           }
+        };
+
+       var add = function(obj){
+           var number = $(obj).prev();
+           number.val(parseInt(number.val())+1);
+        }
+    </script>
+    <style>
+        .box{
+            width: 400px;
+            height: 200px;
+            margin: auto;
+        }
+        .box .input1{
+            width: 40px;
+            text-align: center;
+        }
+        .box i{
+            font-style: normal;
+            padding:0 10px;
+            font-size: 20px;
+            background: #fff1c8;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+        <div><i onclick="del(this)">-</i><input class="input1" type="text" placeholder="0" value="1"><i onclick="add(this)">+</i></div>
+    </div>
+
+
+    <!--<div><span>Hello</span></div>-->
+    <!--<p class="selected">Hello Again</p>-->
+    <!--<p>And Again</p>-->
+
+    <!--<script>-->
+        <!--$(".selected").prev().css("background", "yellow");-->
+        <!--$(".selected").next().css("background", "yellow");-->
+    <!--</script>-->
+
+
+</body>
+</html>

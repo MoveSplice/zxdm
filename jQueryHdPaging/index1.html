@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./paging.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="box" id="box"></div>
+    <script src="./jquery-1.11.1.min.js"></script>
+    <script src="./paing.js"></script>
+    <script>
+        var setTotalCount = 301;
+        $('#box').paing({
+            initPageNo:3,
+            totalPages:30,
+            totalCount:'合计'+setTotalCount +'条数据',
+            slideSpeed:600,
+            jump:true,
+            callback:function (page) {
+                console.log(page);
+            }
+        })
+    </script>
+</body>
+</html>

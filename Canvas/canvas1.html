@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #canvas{
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var can =  document.createElement("canvas");
+        document.body.appendChild(can);
+        can.id = "canvas";
+        var canvas = document.getElementById("canvas");
+        canvas.style.border='1px solid #eee';
+        canvas.style.boxSizing='border-box';
+        canvas.style.margin = "0";
+        canvas.style.padding = "0";
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';//设置颜色
+        ctx.fillRect(30,50,100,50);//设定大小,并且填充一个巨型
+        ctx.strokeRect(10,10,200,120);//绘制一个矩形的边框
+        ctx.clearRect(50,60,20,20);//清除指定矩形的区域，让清除部分完全透明
+        ctx.fillText('hello world',30,120);//指定位置
+        //创建渐变
+        var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
+        gradient.addColorStop("0","magenta");
+        gradient.addColorStop("0.5","blue");
+        gradient.addColorStop("1.0","red");
+        ctx.fillStyle = gradient;//设置颜色
+        ctx.fillText('hello world the first code',30,40);//指定位置
+        //绘制一张脸
+        ctx.beginPath();
+        ctx.arc(75,75,50,0,Math.PI*2,true);//绘制
+        ctx.moveTo(110,75);
+        ctx.arc(75,75,35,0,Math.PI,false);//口(顺时针)
+        ctx.moveTo(65,65);
+        ctx.arc(60,65,5,0,Math.PI,true);//左眼
+        ctx.moveTo(95,65);
+        ctx.arc(90,65,5,0,Math.PI,true);//右眼
+        ctx.stroke();
+
+
+
+
+    </script>
+</body>
+</html>

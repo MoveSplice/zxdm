@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-2.1.1.js"></script>
+    <script src="slick.js"></script>
+    <link href="slick-theme.css" rel="stylesheet">
+    <link href="slick.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .autoplay{
+            width: 200px;
+            height: 60px;
+            margin:300px auto;
+        }
+        .autoplay p{
+            height: 60px;
+            background: #fff1c8;
+            float: left;
+        }
+    </style>
+</head>
+<body style="background: #ccc;">
+<div class="autoplay">
+    <p>your content</p>
+    <p>your content</p>
+    <p>your content</p>
+    <p>your content</p>
+    <p>your content</p>
+    <p>your content</p>
+</div>
+<script>
+    $(document).ready(function(){
+        // $('.autoplay').slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000,
+        // });
+        // $('.autoplay').slick({
+        //     dots: true,
+        //     infinite: true,
+        //     speed: 500,
+        //     fade: true,
+        //     cssEase: 'linear'
+        // });
+
+        $('.autoplay').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        $('.js-add-slide').on('click', function() {
+            slideIndex++;
+            $('.add-remove').slick('slickAdd','<div><h3>' + slideIndex + '</h3></div>');
+        });
+
+        $('.js-remove-slide').on('click', function() {
+            $('.add-remove').slick('slickRemove',slideIndex - 1);
+            if (slideIndex !== 0){
+                slideIndex--;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #canvas{
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var can =  document.createElement("canvas");
+        document.body.appendChild(can);
+        can.id = "canvas";
+        var canvas = document.getElementById("canvas");
+        canvas.style.border='1px solid #eee';
+        canvas.style.width='500px';
+        canvas.style.height='500px';
+        canvas.style.boxSizing='border-box';
+        canvas.style.margin = "0";
+        canvas.style.padding = "0";
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';//设置颜色
+        ctx.fillRect(30,50,100,50);//设定大小,并且填充一个巨型
+        ctx.strokeRect(10,10,200,120);//绘制一个矩形的边框
+        ctx.clearRect(50,60,20,20);//清除指定矩形的区域，让清除部分完全透明
+        ctx.fillText('hello world',30,120);//指定位置
+        //创建渐变
+        var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
+        gradient.addColorStop("0","magenta");
+        gradient.addColorStop("0.5","blue");
+        gradient.addColorStop("1.0","red");
+        ctx.fillStyle = gradient;//设置颜色
+        ctx.fillText('hello world the first code',30,40);//指定位置
+        //绘制一个三角形
+        ctx.beginPath();
+        ctx.moveTo(75,50);
+        ctx.lineTo(100,75);
+        ctx.lineTo(100,25);
+        ctx.fill();
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    function checkMobile(){
+        var sMobile = document.mobileform.mobile.value
+        if(!(/^1[3|5][0-9]\d{4,8}$/.test(sMobile))){
+            alert("不是完整的11位手机号或者正确的手机号前七位");
+            console.log(sMobile)
+            document.mobileform.mobile.focus();
+            return false;
+        }
+    }
+</script>
+<form action="http://ip.jb51.net/sj/mobile2.asp" name="mobileform" method="post" onSubmit="return checkMobile();">
+    <input name="mobile" class=tdc size="40" maxLength="11">
+    <input name="action" type="hidden" value=mobile> <INPUT class=bdtj name=B1 type=submit value="查 询">
+</form>
+</body>
+</html>

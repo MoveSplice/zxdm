@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.js"></script>
+</head>
+<body>
+
+
+<script language="javascript">
+
+    $(document).ready(function() {
+
+        //绑定下拉框change事件，当下来框改变时调用 SelectChange()方法
+
+        $("#selectID").change(function() { SelectChange(); });
+
+    })
+
+    function SelectChange() {
+
+        //获取下拉框选中项的text属性值
+
+        var selectText = $("#selectID").find("option:selected").text();
+
+        alert(selectText);
+
+        //获取下拉框选中项的value属性值
+
+        var selectValue = $("#selectID").val();
+
+        alert(selectValue);
+
+        //获取下拉框选中项的index属性值
+
+        var selectIndex = $("#selectID").get(0).selectedIndex;
+
+        alert(selectIndex);
+
+        ////获取下拉框最大的index属性值
+
+        var selectMaxIndex = $("#selectID option:last").attr("index");
+
+        alert(selectMaxIndex);
+
+    }
+
+</script>
+
+<select id="selectID">
+
+    <option value="1">1</option>
+
+    <option value="2">2</option>
+
+    <option value="3">3</option>
+
+    <option value="4">4</option>
+
+    <option value="5">5</option>
+
+    <option value="6">6</option>
+
+</select>
+
+</body>
+</html>
