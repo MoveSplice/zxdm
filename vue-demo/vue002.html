@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 </title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+    <style>
+        #app {
+            margin: 50px 0;
+            color: #666;
+            text-align: center;
+        }
+
+        #iconScissors {
+            margin: 0 auto;
+            display: table;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p>{{ foo }}</p>
+    <!-- this will no longer update `foo`! -->
+    <button v-on:click="foo = 'baz'">Change it</button>
+</div>
+<script>
+    var data = { a: 1 };
+    var vm = new Vue({
+        data: {
+            newTodoText: '',
+            visitCount: 0,
+            hideCompletedTodos: false,
+            todos: [],
+            error: null
+        }
+    });
+
+    var obj = {
+        foo: 'bar'
+    }
+
+    Object.freeze(obj)
+
+    new Vue({
+        el: '#app',
+        data: obj
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style>
+        .tab-button {
+            padding: 6px 10px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background: #f0f0f0;
+            margin-bottom: -1px;
+            margin-right: -1px;
+        }
+        .tab-button:hover {
+            background: #e0e0e0;
+        }
+        .tab-button.active {
+            background: #e0e0e0;
+        }
+        .tab {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .posts-tab {
+            display: flex;
+        }
+        .posts-sidebar {
+            max-width: 40vw;
+            margin: 0;
+            padding: 0 10px 0 0;
+            list-style-type: none;
+            border-right: 1px solid #ccc;
+        }
+        .posts-sidebar li {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .posts-sidebar li:hover {
+            background: #eee;
+        }
+        .posts-sidebar li.selected {
+            background: lightblue;
+        }
+        .selected-post-container {
+            padding-left: 10px;
+        }
+        .selected-post > :first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body>
+<!--<script src="https://unpkg.com/vue"></script>-->
+
+<div id="dynamic-component-demo">
+    <button
+            v-for="tab in tabs"
+            v-bind:key="tab"
+            v-bind:class="['tab-button', { active: currentTab === tab }]"
+            v-on:click="currentTab = tab"
+    >{{ tab }}</button>
+
+    <keep-alive>
+        <component
+                v-bind:is="currentTabComponent"
+                class="tab"
+        ></component>
+    </keep-alive>
+
+</div>
+    <script>
+        Vue.component('tab-posts', {
+            data: function () {
+                return {
+                    posts: [
+                        {
+                            id: 1,
+                            title: 'Cat Ipsum',
+                            content: '<p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p>'
+                        },
+                        {
+                            id: 2,
+                            title: 'Hipster Ipsum',
+                            content: '<p>Bushwick blue bottle scenester helvetica ugh, meh four loko. Put a bird on it lumbersexual franzen shabby chic, street art knausgaard trust fund shaman scenester live-edge mixtape taxidermy viral yuccie succulents. Keytar poke bicycle rights, crucifix street art neutra air plant PBR&B hoodie plaid venmo. Tilde swag art party fanny pack vinyl letterpress venmo jean shorts offal mumblecore. Vice blog gentrify mlkshk tattooed occupy snackwave, hoodie craft beer next level migas 8-bit chartreuse. Trust fund food truck drinking vinegar gochujang.</p>'
+                        },
+                        {
+                            id: 3,
+                            title: 'Cupcake Ipsum',
+                            content: '<p>Icing dessert soufflé lollipop chocolate bar sweet tart cake chupa chups. Soufflé marzipan jelly beans croissant toffee marzipan cupcake icing fruitcake. Muffin cake pudding soufflé wafer jelly bear claw sesame snaps marshmallow. Marzipan soufflé croissant lemon drops gingerbread sugar plum lemon drops apple pie gummies. Sweet roll donut oat cake toffee cake. Liquorice candy macaroon toffee cookie marzipan.</p>'
+                        },
+                        {
+                            id:4,
+                            title:'abc',
+                            content:"<p>abccba</p>"
+                        }
+                    ],
+                    selectedPost: null
+                }
+            },
+            template: '<div class="posts-tab"><ul class="posts-sidebar"><li ' +
+            'v-for="post in posts"' +
+            'v-bind:key="post.id"' +
+            'v-bind:class="{ selected: post === selectedPost }"' +
+            'v-on:click="selectedPost = post">{{ post.title }}</li></ul>' +
+            '<div class="selected-post-container"><div ' +
+            'v-if="selectedPost" ' +
+            'class="selected-post">' +
+            '<h3>{{ selectedPost.title }}</h3>' +
+            '<div class="cbnm" v-html="selectedPost.content"></div>' +
+            '</div>' +
+            '<strong v-else>Click on a blog title to the left to view it.</strong></div></div>'
+        })
+
+        Vue.component('tab-archive', {
+            data:function(){
+                return{
+                    archives:[
+                        {
+                            id:1,
+                            title:"archive1",
+                            content:"<p>archive1 archive1 archive1</p>"
+                        },
+                        {
+                            id:2,
+                            title:"archive2",
+                            content:"<p>archive2 archive2 archive2"
+                        },
+                        {
+                            id:3,
+                            title:"archive3",
+                            content:"<p>archive3 archive3 archive3"
+                        }
+                    ],
+                    selectedArchive:null,
+                }
+
+            },
+            template: `<div class="posts-tab"><ul class="posts-sidebar"><li v-for="archive in archives" v-bind:key="archive.id" v-bind:class="{selected:archive === selectedArchive}" @click="selectedArchive = archive">{{archive.title}}</li></ul><div class="selected-post-container"><div v-if="selectedArchive" class="selected-post"><h3>{{selectedArchive.title}}</h3><div v-html="selectedArchive.content"></div><strong v-else>hahahahahaa</strong></div></div></div>`
+        })
+
+        Vue.component("tab-haha",{
+            data:function () {
+                return{
+                    hahas:[
+                        {
+                            id:1,
+                            title:"haha1",
+                            content:"<p>hahahahahahahha1</p>"
+                        },
+                        {
+                            id:2,
+                            title:"hahaha2",
+                            content:"<p>hahahahaha2</p>"
+                        },
+                        {
+                            id:3,
+                            title:"hahah3",
+                            content:"<p>hahahahah3</p>"
+                        },
+                        {
+                            id:4,
+                            title:"hahaha4",
+                            content:"<p>4444444444444</p>"
+                        },
+                        {
+                            id:5,
+                            title:"5",
+                            content:"<p>5555555555555555555"
+                        }
+                    ],
+                    selectedHaha:null,
+                }
+            },
+            template:'<div class="posts-tab"><ul class="posts-sidebar">' +
+            '<li v-for="haha in hahas" v-bind:key="haha.id" v-bind:class="{ selected:haha===selectedHaha }" v-on:click="selectedHaha = haha">{{haha.title}}</li></ul>' +
+            '<div class="selected-post-container"><div v-if="selectedHaha" class="selected-post"><h3>{{selectedHaha.title}}</h3>' +
+            '<div v-html="selectedHaha.content"></div><strong v-else>hahahahahaha</strong></div></div></div>'
+        })
+
+        Vue.component("tab-cnm",{
+            data:function () {
+                return{
+                    cnms:[
+                        {
+                            id:1,
+                            title:"cnm1",
+                            content:"<p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once,</p>"
+                        },
+                        {
+                            id:2,
+                            title:"cnm2",
+                            content:"<p>hahaahahahahha</p>"
+                        }
+                    ],
+                    selectedCnm: null
+                }
+            },
+            template:'<div class="posts-tab">' +
+            '<ul class="posts-sidebar">' +
+            '<li v-for="cnm in cnms" v-bind:key="cnm.id" v-bind:class="{ selected: cnm === selectedCnm }" v-on:click="selectedCnm = cnm">{{cnm.title}}</li></ul>' +
+            '<div class="selected-post-container"><div v-if="selectedCnm" class="selected-post"><h3>{{ selectedCnm.title }}</h3>' +
+            '<div v-html="selectedCnm.content"></div><strong v-else>Click on a blog title to the left to view it.</strong></div> </div>' +
+            '</div>'
+        })
+        
+        Vue.component("tab-ffffff",{
+            data:function () {
+                return{
+                    ffffffs:[
+                        {
+                            id:1,
+                            title:"ffffff1",
+                            content:"<p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once,fffffffffff1</p>"
+                        },
+                        {
+                            id:2,
+                            title:"ffffff2",
+                            content:"<p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once,ffffffffffff2</p>"
+                        }
+                    ],
+                    selectedFfffff:null,
+                }
+            },
+            template:`<div class="posts-tab">
+            <ul class="posts-sidebar">
+            <li v-for="ffffff in ffffffs" v-bind:key="ffffff.id" v-bind:class="{ selected: ffffff === selectedFfffff }" v-on:click="selectedFfffff = ffffff">{{ffffff.title}}</li></ul>
+            <div class="selected-post-container"><div v-if="selectedFfffff" class="selected-post"><h3>{{ selectedFfffff.title }}</h3>
+            <div v-html="selectedFfffff.content"></div><strong v-else>Click on a blog title to the left to view it.</strong></div> </div>
+            </div>`
+        })
+
+        Vue.component("tab-dddd",{
+            data:function(){
+                return{
+                    dddds:[
+                        {
+                            id:1,
+                            title:"dddd1",
+                            content:"dddd1 dddd1 dddd1"
+                        },
+                        {
+                            id:2,
+                            title:"dddd2",
+                            content:"dddd2 dddd2 dddd2"
+                        },
+                        {
+                            id:3,
+                            title:"dddd3",
+                            content:"dddd3 dddd3 dddd3"
+                        },
+                        {
+                            id:4,
+                            title:"dddd4",
+                            content:"dddd4 dddd4 dddd4"
+                        }
+                    ],
+                    selectedDddd:null
+                }
+            },
+            template:`<div class="posts-tab"><ul class="posts-sidebar"><li v-for="dddd in dddds" v-bind:key="dddd.id" v-bind:class="{selected:dddd === selectedDddd }" @click="selectedDddd = dddd">{{dddd.title}}</li></ul>
+            <div class="selected-post-container"><div v-if="selectedDddd" class="selected-post"><h3>{{selectedDddd.title}}</h3><div v-html="selectedDddd.content"></div><strong v-else>lalalalalalalala</strong></div></div></div>`
+        })
+
+        new Vue({
+            el: '#dynamic-component-demo',
+            data: {
+                currentTab: 'Posts',
+                tabs: ['Posts', 'Archive',"Haha","Cnm","Ffffff","Dddd"]
+            },
+            computed: {
+                currentTabComponent: function () {
+                    return 'tab-' + this.currentTab.toLowerCase()
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+    <div id="blog-post-demo">
+        <blog-post
+                v-for="post in posts"
+                v-bind:key="post.id"
+                v-bind:ffcc="post.ffcc"
+                v-bind:title="post.title"
+        ></blog-post>
+    </div>
+    <script>
+        Vue.component('blog-post', {
+            props: ['title','ffcc'],
+            template: '<h3>{{ title }}----bbbb---<span>{{ffcc}}</span>---1111</h3>'
+        })
+
+        var vm = new Vue({
+            el: '#blog-post-demo',
+            data: {
+                posts: [
+                    { id: 1, title: 'My journey with Vue',ffcc:'vxs1d' },
+                    { id: 2, title: 'Blogging with Vue',ffcc:'vx2sd' },
+                    { id: 3, title: 'Why Vue is so fun',ffcc:'v' }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

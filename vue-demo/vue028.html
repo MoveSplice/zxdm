@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <currentcy-input v-model="price"></currentcy-input>
+            <span>{{price}}</span>
+        <currentcy-input value="casdasda"></currentcy-input>
+    </div>
+    <script>
+        Vue.component('currency-input', {
+            template: '<span><input ref="input" ' +
+            ':value="value"\n' +
+            '@input="$emit(\'input\', $event.target.value)"></span>',
+          props: ['value']
+        })
+
+        var demo = new Vue({
+          el: '#demo',
+          data: {
+            price: 100,
+              value:"cdsd"
+          }
+        })
+
+    </script>
+</body>
+</html>

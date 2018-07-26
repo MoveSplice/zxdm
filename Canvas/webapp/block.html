@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>block</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"  type="text/css">
+    <script src="bootstrap/node_modules/bootstrap/dist/js/jquery.js"></script>
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="echarts/block.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default sm-padding-top">
+    <div class="container data-top">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                <div id="data-rest">
+                    <img width="70" class="quan-img1" src="images/0.png">
+                    <img width="70" class="quan-img2" src="images/1.png">
+                    <img width="70" class="quan-img3" src="images/2.png">
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                <ul id="navbar-collapse" class="data-top-ul">
+                    <li><img id="dataX" style="padding-top: 10px;" class="pull-left visible-xs" src="images/x_03.png"><a href="data.html">DATA</a></li>
+                    <li><a class="active" href="block.html">Block</a></li>
+                    <li><a href="Transaction.html">Transaction</a></li>
+                    <li class="visible-xs"><select><option>English</option><option>中文</option></select></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
+                <select class="data-select">
+                    <option>English</option>
+                    <option>中文</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container data-main">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 sm-padding-bottom  paddingRight5 padding1">
+            <div class="data-main-top">
+                VBC Total
+            </div>
+            <div class="data-main-text">
+                100000000
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 sm-padding-bottom Total paddingLeft5  padding2">
+            <div class="data-main-top res">
+                Current VBC
+            </div>
+            <div class="data-main-text">
+                100Million
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 sm-padding-bottom Blocks paddingRight5  padding3">
+            <div class="data-main-top">
+                Current VBC PCT
+            </div>
+            <div class="data-main-text">
+                100%
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 sm-padding-bottom Tot paddingLeft5  padding4">
+            <div class="data-main-top res">
+                Block Total
+            </div>
+            <div class="data-main-text req">
+                0
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container sm-padding-top data-section">
+    <div class="row">
+        <div class="col-lg-9">
+            <input type="text" class="data-section-input"><span class="data-section-span">Search</span>
+        </div>
+        <div class="col-lg-3">
+            <div class="data-section-right-text">
+                GET A FREE WALLET
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container data-nav">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="data-nav-text">
+                Search for Block Height / Block Hash or Tx ID.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="transaction"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container block-nodes">
+    <div class="row">
+        <div class="col-lg-12" id="block-main">
+            <!--<div class="block-main">-->
+                <!--<div class="col-lg-12 title">Transaction#dddf83839f</div>-->
+                <!--<div class="col-lg-12">-->
+                    <!--<ul>-->
+                        <!--<li>Hash：894020fcb2dcbda5629ec3ad3585f8ac6f39e325e75b534094957ee632</li>-->
+                        <!--<li>Hash of Previous block: 49069e4178c497822a6286372f87e50ae39fe2a050df14d1d8149072047f12c4</li>-->
+                        <!--<li>Difficulty：1242</li>-->
+                        <!--<li>Size ：20M</li>-->
+                        <!--<li>Block Time:  2018-04-11 06:06:08</li>-->
+                        <!--<li>Number of Transactions：20</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="block-main">-->
+                <!--<div class="col-lg-12 title">Transaction#dddf83839f</div>-->
+                <!--<div class="col-lg-12">-->
+                    <!--<ul>-->
+                        <!--<li>Hash：894020fcb2dcbda5629ec3ad3585f8ac6f39e325e75b534094957ee632</li>-->
+                        <!--<li>Hash of Previous block: 49069e4178c497822a6286372f87e50ae39fe2a050df14d1d8149072047f12c4</li>-->
+                        <!--<li>Difficulty：1242</li>-->
+                        <!--<li>Size ：20M</li>-->
+                        <!--<li>Block Time:  2018-04-11 06:06:08</li>-->
+                        <!--<li>Number of Transactions：20</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="block-main">-->
+                <!--<div class="col-lg-12 title">Transaction#dddf83839f</div>-->
+                <!--<div class="col-lg-12">-->
+                    <!--<ul>-->
+                        <!--<li>Hash：894020fcb2dcbda5629ec3ad3585f8ac6f39e325e75b534094957ee632</li>-->
+                        <!--<li>Hash of Previous block: 49069e4178c497822a6286372f87e50ae39fe2a050df14d1d8149072047f12c4</li>-->
+                        <!--<li>Difficulty：1242</li>-->
+                        <!--<li>Size ：20M</li>-->
+                        <!--<li>Block Time:  2018-04-11 06:06:08</li>-->
+                        <!--<li>Number of Transactions：20</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="block-main">-->
+                <!--<div class="col-lg-12 title">Transaction#dddf83839f</div>-->
+                <!--<div class="col-lg-12">-->
+                    <!--<ul>-->
+                        <!--<li>Hash：894020fcb2dcbda5629ec3ad3585f8ac6f39e325e75b534094957ee632</li>-->
+                        <!--<li>Hash of Previous block: 49069e4178c497822a6286372f87e50ae39fe2a050df14d1d8149072047f12c4</li>-->
+                        <!--<li>Difficulty：1242</li>-->
+                        <!--<li>Size ：20M</li>-->
+                        <!--<li>Block Time:  2018-04-11 06:06:08</li>-->
+                        <!--<li>Number of Transactions：20</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-lg-12 col-lg-offset-5 col-md-offset-5 col-sm-offset-4 col-xs-offset-2">-->
+            <!--<nav aria-label="Page navigation">-->
+                <!--<ul class="pagination">-->
+                    <!--<li>-->
+                        <!--<a href="javascript:;" aria-label="Previous">-->
+                            <!--<span aria-hidden="true">&laquo;</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li><a href="javascript:;">1</a></li>-->
+                    <!--<li><a href="javascript:;">2</a></li>-->
+                    <!--<li><a href="javascript:;">3</a></li>-->
+                    <!--<li><a href="javascript:;">4</a></li>-->
+                    <!--<li><a href="javascript:;">5</a></li>-->
+                    <!--<li>-->
+                        <!--<a href="javascript:;" aria-label="Next">-->
+                            <!--<span aria-hidden="true">&raquo;</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div style="background: #f0f3f6">
+    <div class="container data-footer">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <ul class="hidden-xs">
+                    <li class="col-lg-3 col-md-3 col-sm-3">Contact Us</li>
+                    <li class="col-lg-3 col-md-3 col-sm-3">Baidu Forum</li>
+                    <li class="col-lg-3 col-md-3 col-sm-3">Terms of Service</li>
+                    <li class="col-lg-3 col-md-3 col-sm-3">About Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container data-tfooter">
+        <div class="row">
+            <div class="col-lg-12 hidden-xs">
+                <div class="data-tfooter-bottom">
+                    ©2017 Victory Bench Chain is committed to orchestrate a better future.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

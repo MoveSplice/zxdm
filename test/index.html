@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="../jquery.min.js"></script>
-
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
 </head>
 <body>
-<script>
-    function test(obj){
-       alert($(this).val());
-    }
-</script>
-
-<input type="text" onclick="test(this)" class="testId" value="11"/>
-<input type="text" onclick="test(this)" class="testId" value="11"/>
-
-
+<form action="HelloForm" method="GET">
+    网址名：<input type="text" name="name">
+    <br />
+    网址：<input type="text" name="url" />
+    <input type="submit" value="提交" />
+</form>
 </body>
 </html>

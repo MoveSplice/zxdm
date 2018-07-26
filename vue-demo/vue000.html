@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        #app {
+            margin: 50px 0;
+            color: #666;
+            text-align: center;
+        }
+
+        #iconScissors {
+            margin: 0 auto;
+            display: table;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">
+    <button @click="helloWorld"  v-text="name">11111111</button>
+    <input type="number" v-model="A">
+    <input type="number" v-model="B">
+    <div>${Add}</div>
+</div>
+<script>
+    var vm = new Vue({
+        delimiters:['${','}'],
+        el:"#demo",
+        data:{
+            "name":"dkr",
+            "A":0,
+            "B":0,
+        },
+        methods:{
+            helloWorld:function(){
+                console.log("hello world");
+                console.log(this);
+            }
+        },
+        computed:{
+            Add:function(){
+                return parseInt(this.A) + parseInt(this.B);
+            }
+        }
+    })
+
+
+</script>
+
+
+<div class="test">1</div>
+<div class="test">2</div>
+<div class="test">3</div>
+<div class="test">4</div>
+<div class="test">5</div>
+<script>
+    var element = document.getElementsByClassName("test");
+    for(var i=0;i<element.length;i++){
+        element[i].onclick = function () {
+            alert(this.innerHTML)
+        }
+    }
+
+
+    var c = function a() {
+        var b= 0;
+        return function () {
+            b++;
+            console.log(b)
+        }
+    }();
+    c();
+    c();
+</script>
+</body>
+</html>

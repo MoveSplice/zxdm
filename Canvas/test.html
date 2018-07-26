@@ -1,50 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="../jquery-2.1.1.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            var isLateralNavAnimating = false;
-            //o打开或关闭导航菜单
-            $('.cd-nav-trigger').on('click', function(event) {
-                event.preventDefault();
-                //若动画正在进行，则停止
-                if (!isLateralNavAnimating) {
-                    if ($(this).parents('.csstransitions').length > 0)
-                        isLateralNavAnimating = true;
+    <script src="js/jquery.js">
 
-                    $('body').toggleClass('navigation-is-open');
-                    $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-                        //动画结束
-                        isLateralNavAnimating = false;
-                    });
+    </script>
+    <script>
+        // var obj = { one:1, two:2, three:3, four:4};
+        // $.each(obj, function(key, val) {
+        // console.log(key)
+        // console.log(val)
+        // });
+        // console.log([+[]][+[]])
+        var arr =["a","b","c","c","c","d"];
+        Array.prototype.statistics=function(arr){
+            var newarr=[];
+            for(var i = 0; i<this.length; i++){
+                if(!newarr[this[i]] ){
+                    newarr[this[i]] = 1;
+                }else{
+                    newarr[this[i]] +=1;
                 }
-            });
+            }
+            // var maxkey = 1;
+            // var maxvalue ="";
+            // for (var k in newarr){
+            //     if(newarr[k] > 1){
+            //         maxvalue =newarr[k];
+            //         maxkey = k;
+            //     }
+            // }
+            // return maxvalue;
+            return newarr;
+        }
+        console.log(arr.statistics());
+
+       //  function arrCheck(arr){
+       //      var newArr = [];
+       //      for(var i=0;i<arr.length;i++){
+       //          var temp=arr[i];
+       //          var count=0;
+       //          for(var j=0;j<arr.length;j++){
+       //              if(arr[j]==temp){
+       //                  count++;
+       //                  arr[j]=-1;
+       //              }
+       //          }
+       //          if(temp != -1){
+       //              newArr.push(temp+":"+count)
+       //          }
+       //      }
+       //      return newArr;
+       //  }
+       //
+       // console.log(arrCheck([1,2,3,3,4])) ;
+
+        function unique(arr) {
+            var result = [], isRepeated;
+            for (var i = 0, len = arr.length; i < len; i++) {
+                isRepeated = false;
+                for (var j = 0, len = result.length; j < len; j++) {
+                    if (arr[i] == result[j]) {
+                        isRepeated = true;
+                        break;
+                    }
+                }
+                if (!isRepeated) {
+                    result.push(arr[i]);
+                }
+            }
+            return result;
+        }
+
+        function unique(arr) {
+            var result = [], hash = {};
+            for (var i = 0, elem; (elem = arr[i]) != null; i++) {
+                if (!hash[elem]) {
+                    result.push(elem);
+                    hash[elem] = true;
+                }
+            }
+            return result;
+        }
+
+        var arr=[1,1,1,12,3,4,5,62,4,5,2,1,1]
+        console.log(unique(arr))
+
+
+
+
+
+
+
+
+
+        var arrTmp = [1,2,3,4,5];
+        var bigNum = $.map(arrTmp,function(num){
+            if(num>2){
+                return num;
+            }
         });
+        // bigNum -> [3,4,5]
+
+        console.log(bigNum)
+        // 处理对象
+        var person = {
+            jack:{age:9,ip:1234},
+            tom:{age:20,ip:1234},
+            bobo:{age:20,ip:4234}
+        }
+        var oldMan = $.map(person,function(value,key){
+            console.log(key)
+            if(value.age==20){
+                return value;
+            }
+        })
+        console.log(oldMan)
+
+
+
     </script>
 </head>
 <body>
-
-<a href="#cd-nav" class="cd-nav-trigger">Menu
-    <span class="cd-nav-icon"></span>
-    <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-        <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-    </svg>
-</a>
-<div class="cd-navigation-wrapper">
-    <div class="cd-half-block">
-        <h2>导航菜单</h2>
-        <nav>
-            <ul class="cd-primary-nav">
-                <li><a href="http://www.sucaihuo.com" class="selected">首页</a></li>
-                <li><a href="http://www.sucaihuo.com/js">jQuery</a></li>
-                <li><a href="http://www.sucaihuo.com/php">PHP</a></li>
-                <li><a href="http://www.sucaihuo.com/templates">模板</a></li>
-            </ul>
-        </nav>
-    </div>
+<div id="elInfo" >
 </div>
 </body>
-</html>
+</html>  

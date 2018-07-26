@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="blog-post-demo">
+        <blog-post title="1111111111111111"></blog-post>
+        <blog-post title="2222222222222222"></blog-post>
+        <blog-post title="3333333333333333"></blog-post>
+        <blog-post title="4444444444444444"></blog-post>
+        <blog-post title="555555555555555555"></blog-post>
+        <blog-post title="666666666666666"></blog-post>
+        <hr>
+
+        <blog-post v-for="post in posts" v-bind:key="post.id" v-bind:title="post.title"></blog-post>
+    </div>
+    <script>
+
+        Vue.component("blog-post",{
+            props:["title"],
+            template:"<h3>{{title}}</h3>"
+        })
+
+        new Vue({
+            el:"#blog-post-demo",
+            data:{
+                posts:[
+                    {id:1,title:"11111111111111111"},
+                    {id:2,title:"22222222222222222"},
+                    {id:3,title:"33333333333333333"}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

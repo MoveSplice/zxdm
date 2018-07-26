@@ -15,39 +15,93 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/分页/index.html">
+      <file leaf-file-name="2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="1273">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.page1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分页/js/jquery.page1.js">
+      <file leaf-file-name="canvas.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/canvas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="75" column="49" lean-forward="false" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
-              <folding>
-                <marker date="1524134182160" expanded="true" signature="384:391" ph="«" />
-                <marker date="1524134182160" expanded="true" signature="520:527" ph="«" />
-                <marker date="1524134182160" expanded="true" signature="2081:2088" ph="»" />
-                <marker date="1524134182160" expanded="true" signature="2217:2224" ph="»" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/分页/js/jquery.page.js">
+      <file leaf-file-name="sha256加密.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/sha256加密.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="19" />
+            <state relative-caret-position="3135">
+              <caret line="162" column="59" lean-forward="false" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/js/test1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/js/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/js/1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layuiDemo01.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui/layuiDemo01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layuiDemo06.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui/layuiDemo06.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -61,6 +115,8 @@
         <option value="package_json" />
         <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
@@ -79,6 +135,14 @@
       <find>alert</find>
       <find>backFn</find>
       <find>turndown</find>
+      <find>textAlign</find>
+      <find>recordContent</find>
+      <find>http</find>
+      <find>hover</find>
+      <find>pcInfo</find>
+      <find>setOption</find>
+      <find>map_points</find>
+      <find>2012</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -90,57 +154,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Canvas/canvas.html" />
-        <option value="$PROJECT_DIR$/Canvas/canvas1.html" />
-        <option value="$PROJECT_DIR$/Canvas/canvas2.html" />
-        <option value="$PROJECT_DIR$/Canvas/canvas3.html" />
-        <option value="$PROJECT_DIR$/Canvas/canvas5.html" />
-        <option value="$PROJECT_DIR$/Canvas/canvas4.html" />
-        <option value="$PROJECT_DIR$/html5-canvas-3d-fireworks/html5-canvas-3d-fireworks/index.html" />
-        <option value="$PROJECT_DIR$/html5-canvas-3d-fireworks/html5-canvas-3d-fireworks/canvas.html" />
-        <option value="$PROJECT_DIR$/test/sanjidaohang.html" />
-        <option value="$PROJECT_DIR$/jiaoben1678/js/raphael-min.js" />
-        <option value="$PROJECT_DIR$/jiaoben1678/js/script.js" />
-        <option value="$PROJECT_DIR$/svg/svg01.html" />
-        <option value="$PROJECT_DIR$/jiaoben1678/index.html" />
-        <option value="$PROJECT_DIR$/test/js/test.js" />
-        <option value="$PROJECT_DIR$/test/test3.html" />
-        <option value="$PROJECT_DIR$/test/js/test1.js" />
-        <option value="$PROJECT_DIR$/test/test1.html" />
-        <option value="$PROJECT_DIR$/test/test2.html" />
-        <option value="$PROJECT_DIR$/test/js/test3.js" />
-        <option value="$PROJECT_DIR$/preact/preact.html" />
-        <option value="$PROJECT_DIR$/test/js/example.js" />
-        <option value="$PROJECT_DIR$/html5-map-distribute-animation/index.html" />
-        <option value="$PROJECT_DIR$/test/js/example.ts" />
-        <option value="$PROJECT_DIR$/test/jq无缝滚动.html" />
-        <option value="$PROJECT_DIR$/test/css/test.css" />
-        <option value="$PROJECT_DIR$/test/js/common.js" />
-        <option value="$PROJECT_DIR$/test/tongji.html" />
-        <option value="$PROJECT_DIR$/test/yuanxingtongji.html" />
-        <option value="$PROJECT_DIR$/test/js/a.js" />
-        <option value="$PROJECT_DIR$/test/cart1.html" />
-        <option value="$PROJECT_DIR$/test/extend.html" />
-        <option value="$PROJECT_DIR$/test/jiaodiantu.html" />
-        <option value="$PROJECT_DIR$/test/index.html" />
-        <option value="$PROJECT_DIR$/test/select.html" />
-        <option value="$PROJECT_DIR$/slick/test.html" />
-        <option value="$PROJECT_DIR$/test/fangdajing.html" />
-        <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/html5-line-and-column-chart/jqplot/jquery.jqplot.min.css" />
-        <option value="$PROJECT_DIR$/html5-line-and-column-chart/index.html" />
-        <option value="$PROJECT_DIR$/demo/1.0-switchTab.html" />
-        <option value="$PROJECT_DIR$/test/cart.html" />
+        <option value="$PROJECT_DIR$/svg/svg折线.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue030.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue組建.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue組件01.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue032.html" />
+        <option value="$PROJECT_DIR$/test/t.html" />
+        <option value="$PROJECT_DIR$/jquery-html5-map(jb51.net)/index.html" />
+        <option value="$PROJECT_DIR$/test/事件冒泡.html" />
+        <option value="$PROJECT_DIR$/test/canvas1.html" />
+        <option value="$PROJECT_DIR$/Canvas/js/echarts.min.js" />
+        <option value="$PROJECT_DIR$/Canvas/line-smooth.html" />
+        <option value="$PROJECT_DIR$/map-parallel-prices.html" />
+        <option value="$PROJECT_DIR$/vue-demo/runoobVue01.html" />
+        <option value="$PROJECT_DIR$/vue-demo/runoobVue組件.html" />
         <option value="$PROJECT_DIR$/Canvas/test.html" />
-        <option value="$PROJECT_DIR$/jquery-fd-150113231250/index.html" />
-        <option value="$PROJECT_DIR$/test/zhengze.html" />
-        <option value="$PROJECT_DIR$/jquery_copy/js/jquery.zclip.min.js" />
-        <option value="$PROJECT_DIR$/jquery_copy/index.html" />
-        <option value="$PROJECT_DIR$/jquery_copy/test.html" />
-        <option value="$PROJECT_DIR$/test/test.html" />
-        <option value="$PROJECT_DIR$/分页/js/jquery.page.js" />
-        <option value="$PROJECT_DIR$/分页/js/jquery.page1.js" />
-        <option value="$PROJECT_DIR$/分页/index.html" />
+        <option value="$PROJECT_DIR$/vue-demo/runoobVue.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vueFilter.html" />
+        <option value="$PROJECT_DIR$/Canvas/1.html" />
+        <option value="$PROJECT_DIR$/test/test01.html" />
+        <option value="$PROJECT_DIR$/layui/demo01.html" />
+        <option value="$PROJECT_DIR$/layui/layuiDemo02.html" />
+        <option value="$PROJECT_DIR$/layui/layuiDemo03.html" />
+        <option value="$PROJECT_DIR$/layui/layuiDemo04.html" />
+        <option value="$PROJECT_DIR$/test/test02.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue001.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue-demo01.html" />
+        <option value="$PROJECT_DIR$/layui/layuiDemo05.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vueRoute01.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vueRoute02.html" />
+        <option value="$PROJECT_DIR$/vue-demo/Vue拖拽.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue000.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue_Prop.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vueCase.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue-demo02.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue007.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue009.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue010.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue011.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue014.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue016.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue018.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue019.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue028.html" />
+        <option value="$PROJECT_DIR$/vue-demo/vue031.html" />
+        <option value="$PROJECT_DIR$/test/3.html" />
+        <option value="$PROJECT_DIR$/layui/layuiDemo06.html" />
+        <option value="$PROJECT_DIR$/test/tsconfig.json" />
+        <option value="$PROJECT_DIR$/test/js/1.js" />
+        <option value="$PROJECT_DIR$/test/2.html" />
+        <option value="$PROJECT_DIR$/test/js/2.5.3-crypto-sha256.js" />
+        <option value="$PROJECT_DIR$/test/sha256加密.html" />
       </list>
     </option>
   </component>
@@ -151,14 +215,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/AwesomeProject/node_modules" />
+    <handled-path value="$PROJECT_DIR$/Canvas/webapp/bootstrap/node_modules" />
     <handled-path value="$PROJECT_DIR$/my-app/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1929" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,81 +240,63 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxdm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxdm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxdm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxdm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="分页" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxdm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zxdm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="分页" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="zxdm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zxdm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zxdm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zxdm" type="462c0819:PsiDirectoryNode" />
+              <item name="Canvas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zxdm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zxdm" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zxdm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zxdm" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/vbc" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="D:/node/ex/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\node\ex\node.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\zxdm\分页\js" />
-      <recent name="E:\zxdm" />
+      <recent name="E:\zxdm\test\js" />
+      <recent name="E:\zxdm\layui" />
+      <recent name="E:\zxdm\vue-demo" />
+      <recent name="E:\zxdm\Canvas\js" />
       <recent name="E:\zxdm\Canvas" />
-      <recent name="E:\zxdm\images" />
-      <recent name="E:\zxdm\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\zxdm\Canvas" />
       <recent name="E:\zxdm\node" />
       <recent name="E:\zxdm\test\js" />
       <recent name="E:\zxdm\test\img" />
       <recent name="E:\zxdm\jquery-paging" />
-      <recent name="E:\zxdm\jqbanner" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -296,15 +342,6 @@
       <option name="filePath" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -324,6 +361,14 @@
       <test-directory />
       <recursive>false</recursive>
       <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -398,315 +443,467 @@
       <workItem from="1523861515658" duration="990000" />
       <workItem from="1524118491024" duration="13271000" />
       <workItem from="1524188552758" duration="735000" />
+      <workItem from="1524293640263" duration="849000" />
+      <workItem from="1524900222760" duration="1016000" />
+      <workItem from="1524970112161" duration="637000" />
+      <workItem from="1525223202499" duration="3328000" />
+      <workItem from="1525309768669" duration="862000" />
+      <workItem from="1525347259060" duration="3616000" />
+      <workItem from="1525395771345" duration="7279000" />
+      <workItem from="1525485353140" duration="1250000" />
+      <workItem from="1525515256446" duration="1511000" />
+      <workItem from="1525582235790" duration="9405000" />
+      <workItem from="1525655562045" duration="7605000" />
+      <workItem from="1525914388033" duration="1599000" />
+      <workItem from="1525953572541" duration="599000" />
+      <workItem from="1526003153730" duration="1239000" />
+      <workItem from="1526086826910" duration="2000" />
+      <workItem from="1526118340475" duration="4484000" />
+      <workItem from="1526261724205" duration="79000" />
+      <workItem from="1526313436839" duration="729000" />
+      <workItem from="1526608090243" duration="6539000" />
+      <workItem from="1526881092500" duration="1377000" />
+      <workItem from="1527046435510" duration="633000" />
+      <workItem from="1527059939930" duration="599000" />
+      <workItem from="1527076409061" duration="4368000" />
+      <workItem from="1527210662125" duration="5079000" />
+      <workItem from="1527239299752" duration="2952000" />
+      <workItem from="1527298593947" duration="1222000" />
+      <workItem from="1527502260757" duration="887000" />
+      <workItem from="1527821733197" duration="1692000" />
+      <workItem from="1527824235983" duration="23402000" />
+      <workItem from="1527925191022" duration="41299000" />
+      <workItem from="1528248818829" duration="53039000" />
+      <workItem from="1528506402336" duration="6663000" />
+      <workItem from="1528679187917" duration="6362000" />
+      <workItem from="1528791845898" duration="22210000" />
+      <workItem from="1528938278951" duration="7679000" />
+      <workItem from="1529046522825" duration="3857000" />
+      <workItem from="1529370176290" duration="8118000" />
+      <workItem from="1529477800439" duration="15293000" />
+      <workItem from="1529889526116" duration="37691000" />
+      <workItem from="1530693434604" duration="1861000" />
+      <workItem from="1530841295578" duration="14155000" />
+      <workItem from="1531098081047" duration="5214000" />
+      <workItem from="1531185356686" duration="606000" />
+      <workItem from="1531357572629" duration="1901000" />
+      <workItem from="1531444415341" duration="598000" />
+      <workItem from="1531530310197" duration="1859000" />
+      <workItem from="1531562893882" duration="599000" />
+      <workItem from="1531703128414" duration="2486000" />
+      <workItem from="1531789735517" duration="3298000" />
+      <workItem from="1531876134899" duration="2448000" />
+      <workItem from="1531965265131" duration="4296000" />
+      <workItem from="1532048970850" duration="8258000" />
+      <workItem from="1532307835727" duration="599000" />
+      <workItem from="1532394536151" duration="596000" />
+      <workItem from="1532481944626" duration="2809000" />
+      <workItem from="1532567090139" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271896000" />
+    <option name="totallyTimeSpent" value="621128000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16979167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html5-line-and-column-chart/jqplot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.html" />
-    <entry file="file://$PROJECT_DIR$/main.html" />
-    <entry file="file://$PROJECT_DIR$/param.html" />
-    <entry file="file://$PROJECT_DIR$/jiaoben3256/jiaoben3256/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue動態路由01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.SuperSlide.2.1.1.js" />
-    <entry file="file://$PROJECT_DIR$/demo/1.0-switchTab.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue動態路由02.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQueryHdPaging/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1311">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jiaoben2770/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue_Prop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="54" column="34" lean-forward="false" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        <state relative-caret-position="284">
+          <caret line="102" column="22" lean-forward="true" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jiaoben3256/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue-demo01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="534">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jqbanner/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery3dLbt/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery3jld/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-paging/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaoben2195/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaoben1678/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jiaoben2137/jiaoben2137/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5-map-distribute-animation/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="240" column="20" lean-forward="false" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5-line-and-column-chart/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/jiaodiantu.html" />
-    <entry file="file://$PROJECT_DIR$/test/sanjidaohang.html" />
-    <entry file="file://$PROJECT_DIR$/test/yuanxingtongji.html" />
-    <entry file="file://$PROJECT_DIR$/test/test3.html" />
-    <entry file="file://$PROJECT_DIR$/test/test2.html" />
-    <entry file="file://$PROJECT_DIR$/test/test1.html" />
-    <entry file="file://$PROJECT_DIR$/test/tabs.html" />
-    <entry file="file://$PROJECT_DIR$/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5-canvas-3d-fireworks/html5-canvas-3d-fireworks/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5-canvas-fireworks-2/html5-canvas-fireworks-2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/W3C_demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/huadongqiehuantup.html" />
-    <entry file="file://$PROJECT_DIR$/test/digui.html" />
-    <entry file="file://$PROJECT_DIR$/test/cart1.html" />
-    <entry file="file://$PROJECT_DIR$/test/cart.html" />
-    <entry file="file://$PROJECT_DIR$/jquerylbt/index.html" />
-    <entry file="file://$PROJECT_DIR$/slick/slick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Canvas/test.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue-demo02.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="674">
-          <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <caret line="46" column="41" lean-forward="false" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-nav20150806/js/draggabilly.pkgd.min.js">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vueCase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
+        <state relative-caret-position="208">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue定向路由.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue005.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-nav20150806/js/classie.js">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue006.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-nav20150806/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue007.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="71" />
+        <state relative-caret-position="252">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery-fd-150113231250/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue008.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2808">
-          <caret line="119" column="23" lean-forward="false" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/zhengze.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue009.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="185">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery_copy/js/jquery.zclip.min.js">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue010.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="64" column="70" lean-forward="false" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="70" />
+        <state relative-caret-position="325">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery_copy/test.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue011.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery_copy/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue012.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="456">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html5-canvas-crystal-ball/js/index.js">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue013.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8645">
-          <caret line="455" column="79" lean-forward="false" selection-start-line="455" selection-start-column="79" selection-end-line="455" selection-end-column="79" />
+        <state relative-caret-position="422">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html5-canvas-crystal-ball/index.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue014.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="809">
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.html">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue015.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/分页/js/jquery.page.js">
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue016.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="107" column="19" lean-forward="false" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="19" />
+        <state relative-caret-position="670">
+          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue017.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue018.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue019.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue020.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue021.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue022.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue023.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue024.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue027.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue026.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue025.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue028.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue029.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue030.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-demo/vue031.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="86" column="15" lean-forward="false" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui/layuiDemo01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/分页/js/jquery.page1.js">
+    <entry file="file://$PROJECT_DIR$/layui/layuiDemo05.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="75" column="49" lean-forward="false" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
-          <folding>
-            <marker date="1524134182160" expanded="true" signature="384:391" ph="«" />
-            <marker date="1524134182160" expanded="true" signature="520:527" ph="«" />
-            <marker date="1524134182160" expanded="true" signature="2081:2088" ph="»" />
-            <marker date="1524134182160" expanded="true" signature="2217:2224" ph="»" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/分页/index.html">
+    <entry file="file://$PROJECT_DIR$/layui/layuiDemo06.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="323">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/test1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/canvas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/2.5.3-crypto-sha256.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/2.5.3-crypto-sha2561.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/2.5.3-crypto-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sha256加密.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="162" column="59" lean-forward="false" selection-start-line="162" selection-start-column="59" selection-end-line="162" selection-end-column="59" />
           <folding />
         </state>
       </provider>

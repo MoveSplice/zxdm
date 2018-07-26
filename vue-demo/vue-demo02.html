@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        .box {
+            transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1 class="centered">Scroll me</h1>
+    <div class="box" v-scroll="handleScroll">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque amet harum aut ab veritatis earum porro praesentium ut corporis. Quasi provident dolorem officia iure fugiat, eius mollitia sequi quisquam.</p>
+    </div>
+</div>
+<script>
+    Vue.directive('scroll', {
+        inserted: function (el, binding) {
+            let f = function (evt) {
+                if (binding.value(evt, el)) {
+                    window.removeEventListener('scroll', f)
+                }
+            }
+            window.addEventListener('scroll', f)
+        }
+    })
+
+    // main app
+    new Vue({
+        el: '#app',
+        methods: {
+            handleScroll: function (evt, el) {
+                if (window.scrollY > 50) {
+                    el.setAttribute(
+                        'style',
+                        'opacity: 0.5; transform: translate3d(0, -10px, 0)'
+                    )
+                }
+                return window.scrollY > 50
+            }
+        }
+    })
+</script>
+</body>
+</html>

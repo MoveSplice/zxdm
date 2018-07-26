@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="warn('Form cannot be submitted yet.',$event)">Submit</button>
+        <a v-on:click.stop="doThis">2222</a>
+        <form v-on:submit.prevent="onSubmit">3333</form>
+        <a v-on:click.stop.prevent="doThat">44444</a>
+        <form v-on:submit.prevent>5555</form>
+        <div v-on:click.capture="doThis">...</div>
+        <div v-on:click.self="doThat">...</div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            methods:{
+                warn:function (message, event) {
+                    if(event){
+                        // event.preventDefault();
+                        alert(message)
+                    }
+                },
+                doThis:function (event) {
+                  alert("cnm")
+                },
+                onSubmit:function (event) {
+                    alert("zdcnm")
+                },
+                doThat:function (event) {
+                    alert('4444')
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <select v-model="selected">
+            <option v-for="option in options" v-bind:value="option.value">
+                {{option.text}}
+            </option>
+        </select>
+        <span>Selected:{{selected}}</span>
+
+        <hr>
+
+        <input
+                type="checkbox"
+                v-model="toggle"
+                v-bind:true-value="yes"
+                v-bind:false-value="no"
+        >
+        <button @click="checkToggle">{{msg}}</button>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                selected:"A",
+                yes : 'yes',
+                no: 'no',
+                options:[
+                    {text:'One',value:'A'},
+                    {text:'Two',value:'B'},
+                    {text:'Three',value:'C'}
+                ],
+                toggle : 'yes',
+                msg:""
+            },
+            methods:{
+                checkToggle:function () {
+                    this.toggle = this.toggle ==='yes'? 'no':'yes';
+                    this.msg = this.msg ==='yes' ? '取消' :'选中'
+                }
+            }
+
+        })
+
+        vm.checkToggle()
+
+    </script>
+</body>
+</html>

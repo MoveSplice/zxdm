@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style type="text/css">
+        #pop {
+            border: #000;
+            background-color: #CCC;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 200px;
+            height: 500px;
+            display: none;
+        }
+
+        #btn {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+<span id="btn">打开层</span>
+<div>aaaaaaaaaaaa</div>
+<div>aaaaaaaaaaaa</div>
+
+<div id="pop">
+    浮层，点击这个浮层以外的区域，都可以隐藏这个浮层
+    <p><a href="javascript:;">最主要的是点这个div里面的链接，div照样不隐藏</a></p>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    function $(id) { return document.getElementById(id); }
+    window.onload = function () {
+        document.onclick = function (e) {
+            $("pop").style.display = "none";
+        }
+        $("btn").onclick = function (e) {
+            $("pop").style.display = "block";
+            e = e || event; stopFunc(e);
+        }
+        $("pop").onclick = function (e) {
+            e = e || event; stopFunc(e);
+        }
+    }
+    function stopFunc(e) {
+        e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+    }
+</script>

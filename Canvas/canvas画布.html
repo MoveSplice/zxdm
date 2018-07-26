@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="480" height="320"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(420,10);
+    ctx.lineTo(420,280);
+    ctx.moveTo(420,280);
+    ctx.lineTo(10,280);
+
+    ctx.moveTo(20, 20);
+    ctx.quadraticCurveTo(10,120,420,280);
+    ctx.moveTo(30, 40);
+    ctx.quadraticCurveTo(10,250,420,280);
+    ctx.moveTo(50, 40);
+    ctx.quadraticCurveTo(130,20,420,280);
+
+
+    ctx.font = "15px Microsoft JhengHei";
+    ctx.fillText("7",390,250);
+    ctx.fillText("10",300,205);
+    ctx.fillText("14",220,165);
+    ctx.fillText("19",110,130);
+
+    var y = [5,10,15,20,25,30];
+
+    ctx.stroke();
+
+    ctx.beginPath();
+    function draw() {
+
+        for(var i=0;i<y.length;i++){
+
+            var dataY = [{x:430,y:280-5},{x:430,y:230-5},{x:430,y:180-5},{x:430,y:130-5},{x:430,y:80-5}];
+
+            var dataX = [{x:400,y:300},{x:300,y:300},{x:200,y:300},{x:100,y:300},{x:0,y:300}];
+
+            for(var j=0;j<dataY.length;j++){
+
+                ctx.strokeText(y[j],dataY[j].x,dataY[j].y);
+
+                ctx.font="20px Verdana";
+            }
+
+            for (var c=0;c<dataX.length;c++){
+
+                ctx.strokeText(y[c],dataX[c].x,dataX[c].y);
+
+                ctx.font="20px Verdana";
+            }
+        }
+
+    }
+    draw()
+</script>
+</body>
+</html>

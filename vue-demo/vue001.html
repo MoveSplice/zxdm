@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+</head>
+<body>
+<div id="demo">
+    <button @click="helloWorld"  v-text="name"></button>
+    <input type="number" v-model="A">
+    <input type="number" v-model="B">
+    <div>${Add}</div>
+    <button @click="changeArr">改变对象数组值</button>
+    <button @click="changeStr">改变str值</button>
+    <button @click="changeObj">改变obj值</button>
+</div>
+
+</body>
+<script>
+    var vm = new Vue({
+        delimiters:['${','}'],
+        el:"#demo",
+        data:{
+            "name":"dkr",
+            "A":0,
+            "B":0,
+            "arr":[{
+                "name":"lalala",
+                "sex":"nan",
+            },{
+                "name":"hahaha",
+                "sex":"nan",
+            },{
+                "name":"xixixi",
+                "sex":"nv",
+            },],
+            "str":"hello world",
+            "obj":{
+                "name":"diudiudiu",
+                "sex":"nv",
+            }
+        },
+        methods:{
+            helloWorld:function(){
+                console.log("hello world");
+                console.log(this);
+            },
+            changeArr:function(){
+                this.arr.push("nihao");
+            },
+            changeStr:function(){
+                this.str = "hello vue";
+            },
+            changeObj:function(){
+                this.obj.name="dididi";
+            }
+        },
+        computed:{
+            Add:function(){
+                return this.A + this.B;
+            }
+        },
+        watch:{
+            "arr":{
+                handler:function(val,oldVal){
+                    console.log("监听到了arr数据变化");
+                    console.log(JSON.stringify(val)===JSON.stringify(oldVal)); //true
+                },
+                //deep:true,
+            },
+            "str":{
+                handler:function(val,oldVal){
+                    console.log("监听到了str数据变化");
+                    console.log(val,oldVal); //hello vue , hello world
+                },
+                //deep:true,
+            },
+            "obj":{
+                handler:function(val,oldVal){
+                    console.log("监听到了obj数据变化");
+                    console.log(val === oldVal); //true
+                },
+                deep:true,
+            },
+        }
+    })
+
+</script>
+</body>
+</html>

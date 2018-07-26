@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.16/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--<props-demo-advanced size="123" my-message="ada"></props-demo-advanced>-->
+    <Comp msg="aaaa"></Comp>
+</div>
+<script>
+    // 简单语法
+    // Vue.component('props-demo-simple', {
+    //     props: ['size', 'myMessage']
+    // })
+    //
+    // // 对象语法，提供校验
+    // Vue.component('props-demo-advanced', {
+    //     props: {
+    //         // 检测类型
+    //         height: Number,
+    //         // 检测类型 + 其他验证
+    //         age: {
+    //             type: Number,
+    //             default: 0,
+    //             required: true,
+    //             validator: function (value) {
+    //                 return value >= 0
+    //             }
+    //         }
+    //     }
+    // })
+    // new Vue({
+    //     el:"#app"
+    // })
+    var Comp = Vue.extend({
+        props: ['msg'],
+        template: '<div>{{ msg }}</div>'
+    })
+
+    var vm = new Comp({
+        propsData: {
+            msg: 'hello'
+        }
+    })
+
+
+</script>
+</body>
+</html>

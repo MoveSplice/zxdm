@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+<ul id="v-for-object" class="demo">
+    <li v-for="value in object">
+        {{ value }}
+        <hr>
+
+    </li>
+    <div v-for="(value, key) in object">
+        {{ key }}: {{ value }}
+        <hr>
+
+    </div>
+
+    <div v-for="(value,key,index) in object">{{index}}.{{key}}:{{value}}<hr></div>
+</ul>
+<script>
+    new Vue({
+        el: '#v-for-object',
+        data: {
+            object: {
+                firstName: 'John',
+                lastName: 'Doe',
+                age: 30
+            }
+        }
+    })
+</script>
+</body>
+</html>

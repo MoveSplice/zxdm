@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+        #span{
+            width: 200px;
+            height: 200px;
+            background: green;
+            display: inline-block;
+        }
+        #aTag{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div id = "div">
+    <span id="span">
+        <a id="aTag">事件测试</a>
+    </span>
+</div>
+<script>
+    document.getElementById("aTag").addEventListener('click',aTag);
+    document.getElementById("span").addEventListener('click',span);
+    document.getElementById("div").addEventListener('click',div);
+    function aTag(e) {
+        alert("点击的是a标签");
+        e.stopPropagation();
+    }
+    function span(e) {
+        alert("点击的是span标签");
+        e.stopPropagation();
+    }
+    function div(e) {
+        alert("点击的是div标签");
+        e.stopPropagation();
+    }
+</script>
+</body>
+</html>

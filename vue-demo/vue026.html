@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="blog-post-demo">
+        <div  :style="{ fontSize: postFontSize + 'em' }">
+            <blog-post
+                    v-for="post in posts"
+                    v-bind:key="post.id"
+                    v-bind:post="post"
+            ></blog-post>
+        </div>
+
+    </div>
+    <script>
+
+        Vue.component("blog-post",{
+            props:["post"],
+            template:"<div class='blog-post'>" +
+            "<h3>{{post.title}}</h3>" +
+            "<div v-html='post.content'>" +
+            "</div>" +
+            "</div>"
+        })
+
+        new Vue({
+            el:"#blog-post-demo",
+            data:{
+                posts:[
+                    {id:1,title:"11111111111111111"},
+                    {id:2,title:"22222222222222222"},
+                    {id:3,title:"33333333333333333"}
+                ],
+                postFontSize:1
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style type="text/css">
+        .one,.two{
+            height:100px;
+            width:100px;
+            border:1px solid #000;
+            position: absolute;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: -moz-none;
+            cursor: pointer;
+        }
+        .two{
+            left:200px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--<div class="one" v-drag>拖拽one</div>-->
+    <!--<div class="two" v-drag>拖拽two</div>-->
+
+
+    <!--<input type="text" v-model="msg.name">-->
+    <!--<input type="text" v-model="age">-->
+
+
+    <p>obj.a: {{obj.a}}</p>
+    <p>obj.a: <input type="text" v-model="obj.a"></p>
+
+</div>
+<script>
+    // Vue.directive('drag', {
+    //     inserted:function(el){
+    //         el.onmousedown=function(e){
+    //             let l=e.clientX-el.offsetLeft;
+    //             let t=e.clientY-el.offsetTop;
+    //             document.onmousemove=function(e){
+    //                 el.style.left=e.clientX-l+'px';
+    //                 el.style.top=e.clientY-t+'px';
+    //             };
+    //             el.onmouseup=function(){
+    //                 document.onmousemove=e.clientX;
+    //                 el.onmouseup=e.clientY;
+    //             }
+    //         }
+    //     }
+    // })
+    // new Vue({
+    //     el:'#app'
+    // });
+
+    new Vue({
+        el: '#app',
+        data: {
+            obj: {
+                a: 123
+            }
+        },
+        watch: {
+            obj: {
+                handler(newName, oldName) {
+                    console.log('obj.a changed');
+                },
+                immediate: true
+            }
+        }
+    })
+</script>
+</body>
+</html>

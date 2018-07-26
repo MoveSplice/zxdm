@@ -1,44 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <script type="text/javascript">
+
+        var sun = new Image();
+        var moon = new Image();
+        var earth = new Image();
+        function init() {
+            sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+            moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+            earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+            window.requestAnimationFrame(draw);
         }
 
-    </style>
-</head>
-<body>
-    <canvas id="canvas"></canvas>
-    <script>
-        var canvas = document.getElementById("canvas");
-        var ctx = canvas.getContext('2d');
-        for(var i=0;i<8;i++){
-            for(var j=0;j<7;j++){
+        function draw() {
+            var canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+
+                // var offset = 0;
+                //
+                // function draw() {
+                //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+                //     ctx.setLineDash([4, 2]);
+                //     ctx.lineDashOffset = -offset;
+                //     ctx.strokeRect(10, 10, 100, 100);
+                // }
+                //
+                // function march() {
+                //     offset++;
+                //     if (offset > 16) {
+                //         offset = 0;
+                //     }
+                //     draw();
+                //     setTimeout(march, 10);
+                // }
+                //
+                // march();
+
+                <!------------------- ***----------------------->
+
+
+                // var lingrad = ctx.createLinearGradient(0, 0, 0, 150);
+                // lingrad.addColorStop(0, '#00ABEB');
+                // lingrad.addColorStop(0.5, '#fff');
+                // lingrad.addColorStop(0.5, '#26C000');
+                // lingrad.addColorStop(1, '#fff');
+                //
+                // var lingrad2 = ctx.createLinearGradient(0, 40, 0, 85);
+                // lingrad2.addColorStop(0.5, '#000');
+                // lingrad2.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                //
+                // // assign gradients to fill and stroke styles
+                // ctx.fillStyle = lingrad;
+                // ctx.strokeStyle = lingrad2;
+                //
+                // // draw shapes
+                // ctx.fillRect(10, 10, 130, 130);
+                // ctx.strokeRect(50, 50, 50, 50);
+
+
+                <!------------------- ***----------------------->
+
+
+                // var radgrad = ctx.createRadialGradient(45, 45, 10, 52, 50, 30);
+                // radgrad.addColorStop(0, '#A7D30C');
+                // radgrad.addColorStop(0.9, '#019F62');
+                // radgrad.addColorStop(1, 'rgba(1, 159, 98, 0)');
+                //
+                // var radgrad2 = ctx.createRadialGradient(105, 105, 20, 112, 120, 50);
+                // radgrad2.addColorStop(0, '#FF5F98');
+                // radgrad2.addColorStop(0.75, '#FF0188');
+                // radgrad2.addColorStop(1, 'rgba(255, 1, 136, 0)');
+                //
+                // var radgrad3 = ctx.createRadialGradient(95, 15, 15, 102, 20, 40);
+                // radgrad3.addColorStop(0, '#00C9FF');
+                // radgrad3.addColorStop(0.8, '#00B5E2');
+                // radgrad3.addColorStop(1, 'rgba(0, 201, 255, 0)');
+                //
+                // var radgrad4 = ctx.createRadialGradient(0, 150, 50, 0, 140, 90);
+                // radgrad4.addColorStop(0, '#F4F201');
+                // radgrad4.addColorStop(0.8, '#E4C700');
+                // radgrad4.addColorStop(1, 'rgba(228, 199, 0, 0)');
+                //
+                // var radgrad5 = ctx.createRadialGradient(200,200,30,135,185,140);
+                // radgrad5.addColorStop(0,'#c5d');
+                // radgrad5.addColorStop(0.7,'#df6');
+                // radgrad5.addColorStop(1,'rgba(0,233,199,0)');
+                //
+                // // draw shapes
+                // ctx.fillStyle = radgrad4;
+                // ctx.fillRect(0, 0, 1150, 1150);
+                // ctx.fillStyle = radgrad3;
+                // ctx.fillRect(0, 0, 1150, 1150);
+                // ctx.fillStyle = radgrad2;
+                // ctx.fillRect(0, 0, 1150, 1150);
+                // ctx.fillStyle = radgrad;
+                // ctx.fillRect(0, 0, 1150, 1150);
+                // ctx.fillStyle = radgrad5;
+                // ctx.fillRect(0,0,1150,1150);
+
+
+
+                <!------------------- ***----------------------->
+
+
+                // var sin = Math.sin(Math.PI / 6);
+                // var cos = Math.cos(Math.PI / 6);
+                // ctx.translate(100, 100);
+                // var c = 0;
+                // for (var i = 0; i <= 12; i++) {
+                //     c = Math.floor(255 / 12 * i);
+                //     ctx.fillStyle = 'rgb(' + c + ', ' + c + ', ' + c + ')';
+                //     ctx.fillRect(0, 0, 100, 10);
+                //     ctx.transform(cos, sin, -sin, cos, 0, 0);
+                // }
+                //
+                // ctx.setTransform(-1, 0, 0, 1, 100, 100);
+                // ctx.fillStyle = 'rgba(255, 128, 255, 0.5)';
+                // ctx.fillRect(0, 50, 100, 100);
+
+                <!------------------- ***----------------------->
+                //
+                // ctx.fillRect(0, 0, 150, 150);
+                // ctx.translate(75, 75);
+                //
+                // // Create a circular clipping path
+                // ctx.beginPath();
+                // ctx.arc(0, 0, 60, 0, Math.PI * 2, true);
+                // ctx.clip();
+                //
+                // // draw background
+                // var lingrad = ctx.createLinearGradient(0, -75, 0, 75);
+                // lingrad.addColorStop(0, '#232256');
+                // lingrad.addColorStop(1, '#143778');
+                //
+                // ctx.fillStyle = lingrad;
+                // ctx.fillRect(-75, -75, 150, 150);
+                //
+                // // draw stars
+                // for (var j = 1; j < 50; j++) {
+                //     ctx.save();
+                //     ctx.fillStyle = '#fff';
+                //     ctx.translate(75 - Math.floor(Math.random() * 150),
+                //         75 - Math.floor(Math.random() * 150));
+                //     drawStar(ctx, Math.floor(Math.random() * 4) + 2);
+                //     ctx.restore();
+                // }
+
+
+                <!------------------- ***----------------------->
+
+                ctx.globalCompositeOperation = 'destination-over';
+                ctx.clearRect(0, 0, 300, 300); // clear canvas
+
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+                ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+                ctx.save();
+                ctx.translate(150, 150);
+
+                // Earth
+                var time = new Date();
+                ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+                ctx.translate(105, 0);
+                ctx.fillRect(0, -12, 50, 24); // Shadow
+                ctx.drawImage(earth, -12, -12);
+
+                // Moon
+                ctx.save();
+                ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+                ctx.translate(0, 28.5);
+                ctx.drawImage(moon, -3.5, -3.5);
+                ctx.restore();
+
+                ctx.restore();
+
                 ctx.beginPath();
-                var x = 25+j*50; // x 坐标值
-                var y = 25+i*50; // y 坐标值
-                var radius = 20; // 圆弧半径
-                var startAngle = 0; // 开始点
-                var endAngle = Math.PI+(Math.PI*j)/2; // 结束点
-                var anticlockwise = i%4==0 ? false : true; // 顺时针或逆时针
+                ctx.arc(150, 150, 105, 0, Math.PI * 2, false); // Earth orbit
+                ctx.stroke();
 
-                ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+                ctx.drawImage(sun, 0, 0, 300, 300);
 
-                if (i>1){
-                    ctx.fill();
-                } else {
-                    ctx.stroke();
-                }
+                window.requestAnimationFrame(draw);
+                <!------------------- ***----------------------->
+
+                // for (var i = 0; i < 6; i++) {
+                //     for (var j = 0; j < 6; j++) {
+                //         ctx.strokeStyle = 'rgb(0, ' + Math.floor(255 - 42.5 * i) + ', ' +
+                //             Math.floor(255 - 42.5 * j) + ')';
+                //         ctx.beginPath();
+                //         ctx.arc(12.5 + j * 25, 12.5 + i * 25, 10, 0, Math.PI * 2, true);
+                //         ctx.stroke();
+                //     }
+                // }
+
+                <!------------------- ***----------------------->
+
+
+                // ctx.fillStyle = '#FD0';
+                // ctx.fillRect(0, 0, 75, 75);
+                // ctx.fillStyle = '#6C0';
+                // ctx.fillRect(75, 0, 75, 75);
+                // ctx.fillStyle = '#09F';
+                // ctx.fillRect(0, 75, 75, 75);
+                // ctx.fillStyle = '#F30';
+                // ctx.fillRect(75, 75, 75, 75);
+                // ctx.fillStyle = '#FFF';
+                //
+                // // set transparency value
+                // ctx.globalAlpha = 0.2;
+                //
+                // // Draw semi transparent circles
+                // for (var i = 0; i < 7; i++) {
+                //     ctx.beginPath();
+                //     ctx.arc(75, 75, 10 + 10 * i, 0, Math.PI * 2, true);
+                //     ctx.fill();
+                // }
+
+
+                <!------------------- ***----------------------->
+
+
+                // ctx.fillStyle = 'rgb(255, 221, 0)';
+                // ctx.fillRect(0, 0, 150, 37.5);
+                // ctx.fillStyle = 'rgb(102, 204, 0)';
+                // ctx.fillRect(0, 37.5, 150, 37.5);
+                // ctx.fillStyle = 'rgb(0, 153, 255)';
+                // ctx.fillRect(0, 75, 150, 37.5);
+                // ctx.fillStyle = 'rgb(255, 51, 0)';
+                // ctx.fillRect(0, 112.5, 150, 37.5);
+                //
+                // // Draw semi transparent rectangles
+                // for (var i = 0; i < 10; i++) {
+                //     ctx.fillStyle = 'rgba(255, 255, 255, ' + (i + 1) / 10 + ')';
+                //     for (var j = 0; j < 4; j++) {
+                //         ctx.fillRect(5 + i * 14, 5 + j * 37.5, 14, 27.5);
+                //     }
+                // }
+
+
+                <!------------------- ***----------------------->
+
+
+                // for (var i = 0; i < 10; i++) {
+                //     ctx.lineWidth = 1 + i;
+                //     ctx.beginPath();
+                //     ctx.moveTo(5 + i * 14, 5);
+                //     ctx.lineTo(5 + i * 14, 140);
+                //     ctx.stroke();
+                // }
+
+                <!------------------- ***----------------------->
+
+                //
+                // var lineCap = ['butt', 'round', 'square','haha'];
+                //
+                // // Draw guides
+                // ctx.strokeStyle = '#09f';
+                // ctx.beginPath();
+                // ctx.moveTo(10, 10);
+                // ctx.lineTo(140, 10);
+                // ctx.moveTo(10, 140);
+                // ctx.lineTo(140, 140);
+                // ctx.stroke();
+                //
+                // // Draw lines
+                // ctx.strokeStyle = 'black';
+                // for (var i = 0; i < lineCap.length; i++) {
+                //     ctx.lineWidth = 15;
+                //     ctx.lineCap = lineCap[i];
+                //     ctx.beginPath();
+                //     ctx.moveTo(25 + i * 50, 10);
+                //     ctx.lineTo(25 + i * 50, 140);
+                //     ctx.stroke();
+                // }
+
+                <!------------------- ***----------------------->
+
+                //
+                // var lineJoin = ['round', 'bevel', 'miter'];
+                // ctx.lineWidth = 10;
+                // for (var i = 0; i < lineJoin.length; i++) {
+                //     ctx.lineJoin = lineJoin[i];
+                //     ctx.beginPath();
+                //     ctx.moveTo(-5, 5 + i * 40);
+                //     ctx.lineTo(35, 45 + i * 40);
+                //     ctx.lineTo(75, 5 + i * 40);
+                //     ctx.lineTo(115, 45 + i * 40);
+                //     ctx.lineTo(155, 5 + i * 40);
+                //     ctx.stroke();
+                // }
+
+
+
+
+
             }
         }
 
-
-
-
+        init();
+            // function drawStar(ctx, r) {
+            //     ctx.save();
+            //     ctx.beginPath();
+            //     ctx.moveTo(r, 0);
+            //     for (var i = 0; i < 9; i++) {
+            //         ctx.rotate(Math.PI / 5);
+            //         if (i % 2 === 0) {
+            //             ctx.lineTo((r / 0.525731) * 0.200811, 0);
+            //         } else {
+            //             ctx.lineTo(r, 0);
+            //         }
+            //     }
+            //     ctx.closePath();
+            //     ctx.fill();
+            //     ctx.restore();
+            // }
     </script>
+    <style type="text/css">
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body onload="draw();">
+<canvas id="canvas" width="1050" height="1050"></canvas>
 </body>
 </html>

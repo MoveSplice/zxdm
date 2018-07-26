@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<a href="/">&larr; Examples index</a>
+<div id="app"></div>
+    <script>
+        Vue.use(VueRouter)
+
+        const Home = { template: '<router-view></router-view>' }
+        const Default = { template: '<div>default</div>' }
+        const Foo = { template: '<div>foo</div>' }
+        const Bar = { template: '<div>bar</div>' }
+        const Baz = { template: '<div>baz</div>' }
+        const WithParams = { template: '<div>{{ $route.params.id }}</div>' }
+
+        const router = new VueRouter({
+            mode: 'history',
+            base: __dirname,
+            routes: [
+                { path: '/', component: Home,
+                    children: [
+                        { path: '', component: Default },
+                        { path: 'foo', component: Foo },
+                        { path: 'bar', component: Bar },
+                        { path: 'baz', name: 'baz', component: Baz },
+                        { path: 'with-params/:id', component: WithParams },
+                        // relative redirect to a sibling route
+                        { path: 'relative-redirect', redirect: 'foo' }
+                    ]
+                },
+                // absolute redirect
+                { path: '/absolute-redirect', redirect: '/bar' },
+                // dynamic redirect, note that the target route `to` is available for the redirect function
+                { path: '/dynamic-redirect/:id?',
+                    redirect: to => {
+                    const { hash, params, query } = to
+                    if (query.to === 'foo') {
+            return { path: '/foo', query: null }
+        }
+        if (hash === '#baz') {
+            return { name: 'baz', hash: '' }
+        }
+        if (params.id) {
+            return '/with-params/:id'
+        } else {
+            return '/bar'
+        }
+        }
+        },
+        // named redirect
+        { path: '/named-redirect', redirect: { name: 'baz' }},
+
+        // redirect with params
+        { path: '/redirect-with-params/:id', redirect: '/with-params/:id' },
+
+        // catch all redirect
+        { path: '*', redirect: '/' }
+        ]
+        })
+
+        new Vue({
+            router,
+            template: ' <div id="app">\n' +
+            '      <h1>Redirect</h1>\n' +
+            '      <ul>\n' +
+            '        <li><router-link to="/relative-redirect">\n' +
+            '          /relative-redirect (redirects to /foo)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/relative-redirect?foo=bar">\n' +
+            '          /relative-redirect?foo=bar (redirects to /foo?foo=bar)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/absolute-redirect">\n' +
+            '          /absolute-redirect (redirects to /bar)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/dynamic-redirect">\n' +
+            '          /dynamic-redirect (redirects to /bar)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/dynamic-redirect/123">\n' +
+            '          /dynamic-redirect/123 (redirects to /with-params/123)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/dynamic-redirect?to=foo">\n' +
+            '          /dynamic-redirect?to=foo (redirects to /foo)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/dynamic-redirect#baz">\n' +
+            '          /dynamic-redirect#baz (redirects to /baz)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/named-redirect">\n' +
+            '          /named-redirect (redirects to /baz)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/redirect-with-params/123">\n' +
+            '          /redirect-with-params/123 (redirects to /with-params/123)\n' +
+            '        </router-link></li>\n' +
+            '        <li><router-link to="/not-found">\n' +
+            '          /not-found (redirects to /)\n' +
+            '        </router-link></li>\n' +
+            '      </ul>\n' +
+            '      <router-view class="view"></router-view>\n' +
+            '    </div>'
+
+
+        }).$mount('#app')
+    </script>
+</body>
+</html>

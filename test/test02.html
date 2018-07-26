@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function () {
+
+            $("#cds").change(function () {
+                var str = $(this).val()
+
+                var url = "http://bbb.com/getcd.php?q=" + str
+                $.ajax({
+                    url:url,
+                    type:"get",
+                    dataType:"html",
+                    setRequestHeader:{"Content-type":"application/x-www-from-urlencoded"},
+                    success:function (result) {
+                    console.log(result)
+                    $("#txtHint").html(result)
+                    },
+                    error:function (jqXHR, status) {
+
+
+                    }
+                })
+            })
+
+
+
+        })
+    </script>
+
+    <form>
+        Select a CD:
+        <select name="cds" id="cds">
+            <option value="">Select a CD:</option>
+            <option value="Bob Dylan">Bob Dylan</option>
+            <option value="Bonnie Tyler">Bonnie Tyler</option>
+            <option value="Dolly Parton">Dolly Parton</option>
+        </select>
+    </form>
+    <div id="txtHint"><b>CD info will be listed here...</b></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>勤客网提供-select框重新加载选中select上次选中的项</title>
+ </head>
+ <body onload="funload()">
+  <select onchange="yichu()" id="se">
+    <option>1</option>
+	<option>2</option>
+	<option>3</option>
+  </select>
+
+  <select>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+  </select>
+  <script>
+
+  function funload(){
+    var val = localStorage.getItem("se");
+	document.getElementById("se").value = val;
+  }
+function yichu(){
+	var val = document.getElementById("se").value;
+    alert(val);
+     localStorage.setItem("se",val);
+    window.location.reload()
+}
+
+  </script>
+ </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" height="320" width="480"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var ballRadius = 10;
+    var x = canvas.width/2;
+    var y = canvas.height/2;
+    var dx = 2;
+    var dy = -2;
+    var paddleHeight = 20;
+    var paddleWidth = 55;
+    var paddleX = (canvas.width-paddleWidth)/2;
+    var rightPressed = false;
+    var leftPressed = false;
+
+
+
+    console.log("----------------------------------------------------------");
+
+    console.log("ballRadius=="+ballRadius);
+    console.log("x=="+x);
+    console.log("y=="+y);
+    console.log("dx=="+dx);
+    console.log("dy=="+dy);
+    console.log("paddleHeight=="+paddleHeight);
+    console.log("paddleX=="+paddleX);
+    console.log("rightPressed=="+rightPressed);
+    console.log("leftPressed=="+leftPressed);
+    console.log("----------------------------------------------------------");
+
+
+    document.addEventListener("keydown",keyDownHandler,false);
+    document.addEventListener("keyup",keyUpHandler,false);
+
+    function keyDownHandler(e) {
+        if(e.keyCode==39){
+            rightPressed = true;
+        }
+        if(e.keyCode==37){
+            leftPressed=true;
+        }
+    }
+
+    function keyUpHandler(e) {
+        if(e.keyCode==39){
+            rightPressed = false;
+        }
+        if(e.keyCode==37){
+            leftPressed = false;
+        }
+    }
+
+
+    function drawBall() {
+        var arr = ["ha","he","hei","cao","cnm"];
+
+        var size = 35;
+
+        for(var i=0;i<arr.length;i++){
+
+            var data = [{x:110,y:20},{x:60,y:230},{x:120,y:77},{x:323,y:212},{x:133,y:188}];
+
+            for(var j =0;j<data.length;j++){
+
+              ctx.font= size+"px Georgia";
+              ctx.strokeText(arr[j],data[j].x,data[j].y);
+              console.log("data[j].x",data[j].x)
+              console.log("data[j].y",data[j].y)
+          }
+
+        }
+        ctx.beginPath();
+        ctx.arc(x,y,ballRadius,0,Math.PI*2);
+        ctx.fillStyle = "#ff95DD";
+        ctx.fill();
+
+        // ctx.font="40px Georgia";
+        // ctx.fillText("Cnm!",190,50);
+        // ctx.strokeText("Hello World!",10,150);
+        ctx.closePath();
+    }
+    
+    function drawPaddle() {
+        ctx.beginPath();
+        ctx.rect(paddleX,canvas.height-paddleHeight,paddleWidth,paddleHeight);
+        ctx.fillStyle = "#22d5DD";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function draw() {
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        drawBall();
+        drawPaddle();
+        if(x+dx>canvas.width-ballRadius||x+dx<ballRadius){
+            dx = -dx;
+        }
+
+        if(y+dy>canvas.height-ballRadius||y+dy<ballRadius){
+            dy = -dy;
+        }
+
+        if(rightPressed&&paddleX<canvas.width-paddleWidth){
+            paddleX+=7;
+        }else if(leftPressed&&paddleX>0){
+            paddleX-=7;
+        }
+
+        x+=dx;
+        y+=dy;
+
+
+        console.log("ballRadius=="+ballRadius);
+        console.log("x=="+x);
+        console.log("y=="+y);
+        console.log("dx=="+dx);
+        console.log("dy=="+dy);
+        console.log("paddleHeight=="+paddleHeight);
+        console.log("paddleX=="+paddleX);
+        console.log("rightPressed=="+rightPressed);
+        console.log("leftPressed=="+leftPressed);
+
+    }
+
+
+    console.log("ballRadius=="+ballRadius);
+    console.log("x=="+x);
+    console.log("y=="+y);
+    console.log("dx=="+dx);
+    console.log("dy=="+dy);
+    console.log("paddleHeight=="+paddleHeight);
+    console.log("paddleX=="+paddleX);
+    console.log("rightPressed=="+rightPressed);
+    console.log("leftPressed=="+leftPressed);
+    console.log("----------------------------------------------------------");
+
+
+    //draw()
+     setInterval(draw,10)
+
+
+</script>
+</body>
+</html>

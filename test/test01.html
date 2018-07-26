@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<script>
+    $(function () {
+
+        $("#select").change(function () {
+            console.log($(this).val())
+
+            var str = $(this).val()
+            var url = "http://bbb.com/getsite_mysql.php?q="+str;
+            console.log(url)
+            $.ajax({
+                url:url,
+                type:"post",
+                dataType:"html",
+                setRequestHeader:{"Content-type":"application/x-www-form-urlencoded"},
+                success:function (result) {
+                    console.log(result)
+                    $("#txtHint").html(result)
+                },
+                error:function (jqXHR, status) {
+
+                }
+            })
+        })
+
+
+    })
+</script>
+<form>
+    <select id="select" name="users">
+        <option value="">选择一个网站:</option>
+        <option value="1">Google</option>
+        <option value="2">淘宝</option>
+        <option value="3">菜鸟教程</option>
+        <option value="4">微博</option>
+        <option value="5">Facebook</option>
+    </select>
+</form>
+<br>
+<div id="txtHint"><b>网站信息显示在这里……</b></div>
+</body>
+</html>

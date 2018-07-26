@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>全選：
+            <input type="checkbox" v-model="checked" @change="changeAllChecked()">
+            <label>{{checked}}</label>
+        </p>
+        <p>
+            多個復選框：
+
+        </p>
+        <input type="checkbox" value="Runoob" v-model="checkedNames">
+        <label>Runoob</label>
+
+
+        <input type="checkbox" value="Google" v-model="checkedNames">
+        <label>Google</label>
+
+        <input type="checkbox" value="Taobao" v-model="checkedNames">
+        <label>taobao</label>
+
+        <br>
+        <span>
+		选择的值为:{{checkedNames}}
+	</span>
+
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                checked:false,
+                checkedNames:[],
+                checkedArr:["Runoob","Taobao","Google"]
+            },
+            methods:{
+                changeAllChecked:function () {
+                    if(this.checked){
+                        this.checkedNames = this.checkedArr
+                    }else {
+                        this.checkedNames = []
+                    }
+                }
+            },
+            watch:{
+                "checkedNames":function () {
+                    if(this.checkedNames.length===this.checkedArr.length){
+                        this.checked = true
+                    }else {
+                        this.checked = false
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

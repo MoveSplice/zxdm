@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="blog-posts-events-demo">
+    <div :style="{ fontSize: postFontSize + 'em' }">
+        <blog-post
+                v-for="post in posts"
+                v-bind:key="post.id"
+                v-bind:post="post"
+                v-on:enlarge-text="postFontSize += $event"
+                v-on:enlarge-text="onEnlargeText"
+        ></blog-post>
+    </div>
+</div>
+<script>
+
+
+    Vue.component('blog-post', {
+        props: ['post'],
+        template: '<div class="blog-post">\n' +
+        '      <h3>{{ post.title }}</h3>\n' +
+        '      <button  v-on:click="$emit(\'enlarge-text\',0.1)">\n' +
+        '        Enlarge text\n' +
+        '      </button>\n' +
+        '      <div v-html="post.content"></div>\n' +
+        '    </div>'
+
+    })
+
+    new Vue({
+        el: '#blog-posts-events-demo',
+        data: {
+            posts: ["title"],
+            postFontSize: 1
+        },
+        methods: {
+            onEnlargeText: function (enlargeAmount) {
+                this.postFontSize += enlargeAmount
+                console.log(enlargeAmount)
+            }
+        }
+    })
+</script>
+</body>
+</html>

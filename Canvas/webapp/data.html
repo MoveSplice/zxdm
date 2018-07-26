@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"  type="text/css">
+    <script src="bootstrap/node_modules/bootstrap/dist/js/jquery.js"></script>
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="echarts/data.js"></script>
+    <!--<script src="echarts/canvas.js"></script>-->
+</head>
+<body>
+    <nav class="navbar navbar-default sm-padding-top">
+        <div class="container data-top">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                    <div id="data-rest">
+                        <img width="70" class="quan-img1" src="images/0.png">
+                        <img width="70" class="quan-img2" src="images/1.png">
+                        <img width="70" class="quan-img3" src="images/2.png">
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                    <ul id="navbar-collapse" class="data-top-ul">
+                        <li><img id="dataX" style="padding-top: 10px;" class="pull-left visible-xs" src="images/x_03.png"><a class="active" href="data.html">DATA</a></li>
+                        <li><a href="block.html">Block</a></li>
+                        <li><a href="Transaction.html">Transaction</a></li>
+                        <li class="visible-xs"><select><option>English</option><option>中文</option></select></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
+                    <select class="data-select">
+                        <option>English</option>
+                        <option>中文</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container data-main">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom">
+                <div class="data-main-top">
+                    VBC Total
+                </div>
+                <div class="data-main-text">
+                    100000000
+                </div>
+            </div>
+            <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom Total">
+                <div class="data-main-top res">
+                    Current VBC
+                </div>
+                <div class="data-main-text req">
+                    100Million
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom Blocks">
+                <div class="data-main-top">
+                    Current VBC PCT
+                </div>
+                <div class="data-main-text">
+                    100%
+                </div>
+            </div>
+            <!--paddingLeft5  padding4-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom Tot">
+                <div class="data-main-top res">
+                    Block Total
+                </div>
+                <div class="data-main-text req">
+                    0
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container sm-padding-top data-section">
+        <div class="row">
+            <div class="col-lg-9">
+                <input type="text" class="data-section-input"><span class="data-section-span">Search</span>
+            </div>
+            <div class="col-lg-3">
+                <div class="data-section-right-text">
+                    GET A FREE WALLET
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container data-nav">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="data-nav-text">
+                    Search for Block Height / Block Hash or Tx ID.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="transaction"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container data-nodes">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="data-nodes-left">
+                    Distribution of Nodes
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="data-nodes-right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container data-map">
+        <div class="row">
+            <div class="col-lg-6">
+                <!--<div class="data-map-img">-->
+                    <!--<img src="images/map.png" />-->
+                <!--</div>-->
+                <div class="data-map-img">
+                    <iframe src="map-parallel-prices.html" style="width: 100%;height: 300px;border: none;"></iframe>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <span class="col-lg-4 col-md-4">Asia  50.7%</span>
+                    <span class="col-lg-4 col-md-4">Europe  33.7%</span>
+                    <span class="col-lg-4 col-md-4">America 15.6%</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="data-map-text">
+                    <div class="data-main-text-wrapp">
+                        <ul>
+                            <!--<li><a href="javascript:;">24H</a></li>-->
+                            <li><a href="javascript:;">Daily</a></li>
+                            <li><a href="javascript:;">Weekly</a></li>
+                            <!--<li><a href="javascript:;">Monthly</a></li>-->
+                            <!--<li><a href="javascript:;">Yearly</a></li>-->
+                        </ul>
+                        <!--<span class="span1">Transaction</span>-->
+                        <!--<span class="span2">Block</span>-->
+                    </div>
+                </div>
+                <!--<canvas id="myCanvas" width="560" height="330"></canvas>-->
+                <div>
+                    <iframe src="line-smooth.html" style="width: 100%;height: 320px;border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container data-main1">
+        <div class="row">
+            <!--paddingRight5  padding1-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom data-Difficulty">
+                <div class="data-main-top1 res1">
+                    Difficulty
+                </div>
+                <div class="data-main-text1">
+                    <span class="span1">1,032 T</span><i></i><span class="span2 req1">1.26%</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom data-Time">
+                <div class="data-main-top1 res1">
+                    Block Time
+                </div>
+                <div class="data-main-text1">
+                    <span class="span1">15.3 s</span><i></i><span class="span2 req1">1.26%</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom data-Hashrate">
+                <div class="data-main-top1 res1">
+                    HashRate
+                </div>
+                <div class="data-main-text1">
+                    <span class="span1">1267.6 TH/s</span><i></i><span class="span2  req1">1.26%</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sm-padding-bottom data-Blocksize">
+                <div class="data-main-top1 res1">
+                    Average BlocizeRS
+                </div>
+                <div class="data-main-text1">
+                    <span class="span1">24.52 M</span><i></i><span class="span2  req1">1.26%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container data-hash">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="data-hash-left">
+                    <!--<div class="data-hash-top">-->
+                    <!--<img src="images/blocks.png">-->
+                    <!--<span>blocks</span>-->
+                    <!--<label>view more</label>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                    <!--<div class="data-hash-main-top"> B#518886</div>-->
+                    <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                    <!--<div class="data-hash-main-footer">-->
+                    <!--<div class="current">Difficulty ：0.0002</div>-->
+                    <!--<div class="current">Confirmations：12</div>-->
+                    <!--<div class="current">Time: 7 m</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="data-hash-right">
+                    <!--<div class="data-hash-top">-->
+                        <!--<img src="images/tran.png">-->
+                        <!--<span>Transactions</span>-->
+                        <!--<label>view more</label>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-hash-main">-->
+                        <!--<div class="data-hash-main-top"> B#518886</div>-->
+                        <!--<div class="data-hash-main-text">Hash：00002dfdeod....</div>-->
+                        <!--<div class="data-hash-main-footer">-->
+                            <!--<div class="current">Difficulty ：0.0002</div>-->
+                            <!--<div class="current">Confirmations：12</div>-->
+                            <!--<div class="current">Time: 7 m</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #f0f3f6">
+        <div class="container data-footer">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <ul class="hidden-xs">
+                        <li class="col-lg-3 col-md-3 col-sm-3">Contact Us</li>
+                        <li class="col-lg-3 col-md-3 col-sm-3">Baidu Forum</li>
+                        <li class="col-lg-3 col-md-3 col-sm-3">Terms of Service</li>
+                        <li class="col-lg-3 col-md-3 col-sm-3">About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container data-tfooter">
+            <div class="row">
+                <div class="col-lg-12 hidden-xs">
+                    <div class="data-tfooter-bottom">
+                        ©2017 Victory Bench Chain is committed to orchestrate a better future.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

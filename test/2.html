@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/1.js"></script>
+
+</head>
+<body>
+<div id="div"></div>
+<script>
+
+    $(function () {
+
+        $.ajax({
+            url: "http://bbb.com/json.php",
+            type: "get",
+            dataType: 'json',
+            setRequestHeader: {"Content-type": "application/x-www-form-urlencoded"},
+            success: function (result) {
+
+                console.log("result====",result)
+
+                $.each(result,function(key,value){
+
+                    $("#div").append('<ul><li style="list-style:none;">'+key+' ---->'+value.url+'</li></ul>')
+                })
+
+            },
+            error: function (jqXHR, status) {
+                console.log(jqXHR)
+                console.log(status)
+            }
+        });
+
+        var test1 = function(){
+            var url=pet+"/horse_info?page_no=1&sm_sex=1&sort=desc&orderby=sm_generation&sm_qua_type=2&sm_hid=&sm_owner_name=&sm_generation=0"
+            $.ajax({
+                url:url,
+                type:"get",
+                dataType:"json",
+                setRequestHeader:{"Content-type":"application/x-www-from-urlencoded"},
+                success:function(result){
+                    console.log(result)
+                    console.log(url)
+                    console.log("<hr>")
+
+                },
+                error:function(jqXHR,status){
+
+                }
+            })
+        }
+
+
+        var test2 = function(){
+            var url=pet+"/business_horse_detail_info?page_no=1&quality=1&sort=asc&orderby=quality&sex=2&aname="
+            $.ajax({
+                url:url,
+                type:"get",
+                dataType:"json",
+                setRequestHeader:{"Content-type":"application/x-www-from-urlencoded"},
+                success:function(result){
+                    console.log(result)
+                    console.log(url)
+                    console.log("<hr>")
+
+                },
+                error:function(jqXHR,status){
+
+                }
+            })
+        }
+
+        var test3 = function(){
+            var url=pet+"/statistics_online_players"
+            $.ajax({
+                url:url,
+                type:"get",
+                dataType:"json",
+                setRequestHeader:{"Content-Type":"application/x-www-from-urlencoded"},
+                success:function(result){
+                    console.log(result)
+                    console.log(url)
+                    console.log("<hr>")
+
+                },
+                error:function(jqXHR,status){
+                    alert(jqXHR)
+                    alert(status)
+                }
+            })
+        }
+
+        var test4 = function(){
+            $.ajax({
+                url:pet+"/register",
+                type:"get",
+                dataType:"json",
+                setRequestHeader:{"Content-type":"application/x-www-from-urlencoded"},
+                success:function(result){
+                    console.log(result)
+
+                },
+                error:function(jqXHR,status){
+                    alert(jqXHR)
+                    alert(status)
+                }
+            })
+
+        }
+
+        test1()
+        test2()
+        test3()
+        test4()
+
+    })
+
+
+</script>
+
+</body>
+</html>
